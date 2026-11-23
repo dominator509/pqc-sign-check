@@ -1,1 +1,0 @@
-{"name":"pqc-sign-check","version":"0.1.0","type":"module","license":"Apache-2.0","description":"Sign and verify messages with ML-DSA-87 (post-quantum), built on @qorechain/pqc","scripts":{"test":"node --test","demo":"node cli.mjs demo"},"dependencies":{"@qorechain/pqc":"0.2.3"}}
