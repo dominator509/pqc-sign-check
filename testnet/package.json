@@ -1,0 +1,1 @@
+{"name":"pqc-sign-check-testnet","version":"0.1.0","private":true,"type":"module","license":"Apache-2.0","dependencies":{"@qorechain/sdk":"0.14.0"}}

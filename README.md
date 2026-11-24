@@ -14,3 +14,17 @@ Built with `@qorechain/pqc` (QoreChain kit, credited) and its dependency `@noble
     npm test
 
 Status: library and tests done. Testnet address and hybrid-signed transaction are not yet added.
+
+## Testnet proof (QoreChain `qorechain-diana`)
+
+`testnet/` holds two small scripts that use `@qorechain/sdk` on the public testnet only:
+
+- `gen-wallet.mjs` makes a throwaway wallet. The mnemonic goes to a private file and only the address is printed.
+- `send-hybrid.mjs` registers the account's ML-DSA-87 key and sends a hybrid-signed (classical + post-quantum) transfer.
+
+```sh
+cd testnet && npm install
+QORE_MNEMONIC_FILE=~/.qore/mnemonic node send-hybrid.mjs
+```
+
+Example run: tx `E40C584F7CC8FA0D0DFC4E5635D8A3D64FF00FDE83F35819F8D53A0A1AE0A355` on `qorechain-diana`, code 0, a hybrid-signed transfer.
