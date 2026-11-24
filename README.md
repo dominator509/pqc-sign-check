@@ -1,5 +1,7 @@
 # pqc-sign-check
 
+![pqc-sign-check](assets/banner.png)
+
 A small command line tool to sign and verify messages with ML-DSA-87 (FIPS-204), the post-quantum signature scheme QoreChain accounts use. It shows what a post-quantum signature looks like (about 4.6 KB) and that any change to the message or signature makes verification fail.
 
 Built with `@qorechain/pqc` (QoreChain kit, credited) and its dependency `@noble/post-quantum`. License: Apache-2.0.
@@ -13,7 +15,7 @@ Built with `@qorechain/pqc` (QoreChain kit, credited) and its dependency `@noble
     node cli.mjs demo     # sign, verify, then tamper and confirm it fails
     npm test
 
-Status: library and tests done. Testnet address and hybrid-signed transaction are not yet added.
+Status: library, tests and testnet proof are done (see below).
 
 ## Testnet proof (QoreChain `qorechain-diana`)
 
