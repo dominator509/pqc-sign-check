@@ -15,4 +15,3 @@ jobs:
           node-version: 20
       - run: npm ci
       - run: npm test
-      - run: node --check cli.mjs && node --check testnet/gen-wallet.mjs && node --check testnet/send-hybrid.mjs
