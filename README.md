@@ -30,3 +30,11 @@ QORE_MNEMONIC_FILE=~/.qore/mnemonic node send-hybrid.mjs
 ```
 
 Example run: tx `E40C584F7CC8FA0D0DFC4E5635D8A3D64FF00FDE83F35819F8D53A0A1AE0A355` on `qorechain-diana`, code 0, a hybrid-signed transfer.
+
+## Credits
+
+- [`@qorechain/pqc`](https://www.npmjs.com/package/@qorechain/pqc) and [`@qorechain/sdk`](https://www.npmjs.com/package/@qorechain/sdk) from QoreChain: ML-DSA-87 and SHAKE256 primitives, wallet derivation, hybrid transaction signing.
+- [`@noble/post-quantum`](https://github.com/paulmillr/noble-post-quantum) by Paul Miller, used underneath for ML-DSA.
+- Category: Quantum Pass (QoreChain Developer Fest, "Build Before Q-Day").
+- Testnet address used by this project: `qor1mwhcdn7h6cs690zp8l5naeam2macrkj3tmzcnj` (chain `qorechain-diana`, throwaway, no real value).
+- This is a small teaching tool. It has not had a professional security audit; do not use it to protect real funds.
